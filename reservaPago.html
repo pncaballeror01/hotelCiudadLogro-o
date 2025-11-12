@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - Pago</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-white">
+
+    <div class="sticky-top">
+        <nav class="navbar navbar-dark booking-top-bar">
+            <div class="container">
+                <a class="navbar-brand hero-nav-logo" href="index.html">HCL</a>
+                <ul class="nav ms-auto align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/lang-spanish.png" alt="Español"> ES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><img src="img/lang-english.png" alt="English" style="height: 16px; margin-right: 5px;"> EN</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="index.html#contacto">
+                            <img src="img/phone-2.png" alt="Teléfono" class="icon-phone">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        <header class="booking-header text-center">
+                Los datos de su reserva
+            </header>
+    </div>
+
+    <main class="container flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <div class="section-title-box">
+                    CONFIRMA RESERVA
+                </div>
+
+                <div class="row g-5">
+                    
+                    <div class="col-lg-7">
+                        <h4 class="mb-3">Información del huésped:</h4>
+                        <form action="#">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre *</label>
+                                <input type="text" class="form-control form-control-line" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidos" class="form-label">Apellidos *</label>
+                                <input type="text" class="form-control form-control-line" id="apellidos" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Dirección de correo electrónico *</label>
+                                <input type="email" class="form-control form-control-line" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Número de teléfono *</label>
+                                <input type="tel" class="form-control form-control-line" id="telefono" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pais" class="form-label">País *</label>
+                                <select class="form-select form-select-line" id="pais" required>
+                                    <option value="SPAIN" selected>SPAIN</option>
+                                    <option value="FRANCE">FRANCE</option>
+                                    <option value="UK">UNITED KINGDOM</option>
+                                </select>
+                            </div>
+
+                            <h4 class="mt-5 mb-3">Modo de pago:</h4>
+                            <div class="mb-3">
+                                <label for="titular" class="form-label">Titular *</label>
+                                <input type="text" class="form-control form-control-line" id="titular" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tarjeta" class="form-label">Tarjeta núm * <i class="bi bi-credit-card"></i></label>
+                                <input type="text" class="form-control form-control-line" id="tarjeta" placeholder="0000 0000 0000 0000" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="expira" class="form-label">MM/AA *</label>
+                                    <input type="text" class="form-control form-control-line" id="expira" placeholder="MM/AA" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="cvc" class="form-label">CVC *</label>
+                                    <input type="text" class="form-control form-control-line" id="cvc" placeholder="123" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="card payment-summary sticky-top" style="top: 8rem;">
+                            <img src="img/habitacion1.jpg" class="card-img-top" alt="Habitación">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">HABITACION DOBLE M</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <span>Fecha de entrada:</span>
+                                        <strong>15/11/2025</strong>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span>Fecha de salida:</span>
+                                        <strong>16/11/2025</strong>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span>Huéspedes:</span>
+                                        <strong>2</strong>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span>Total:</span>
+                                        <span class="total">150€</span>
+                                    </li>
+                                </ul>
+                                <div class="d-grid mt-3">
+                                    <button type="submit" class="btn btn-custom-orange btn-lg">CONFIRMAR Y PAGAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="booking-footer mt-auto">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+                <div class="mb-2 mb-md-0">
+                    <strong>Ciudad de Logroño, Spain</strong><br>
+                    <a href="#">Información sobre el establecimiento</a>
+                </div>
+                <div>
+                    <a href="habitaciones.html">MODIFICAR/CANCELAR</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
