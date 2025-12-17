@@ -63,20 +63,26 @@
                         </select>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                   <div class="col-lg-3 col-md-6">
+                        <label for="fecha-entrada" class="visually-hidden">Fecha de Entrada</label>
+                        
                         <input type="text" 
+                               id="fecha-entrada"
                                class="form-control form-control-lg hero-form-input" 
-                               placeholder="Entrada/Check in" 
-                               onfocus="(this.type='date')" 
+                               placeholder="Entrada/Check in"
+                               onfocus="(this.type='date')"
                                onblur="(this.type='text')"
                                required>
                     </div>
                     
                     <div class="col-lg-3 col-md-6">
+                        <label for="fecha-salida" class="visually-hidden">Fecha de Salida</label>
+                        
                         <input type="text" 
+                               id="fecha-salida"
                                class="form-control form-control-lg hero-form-input" 
-                               placeholder="Salida/Check out" 
-                               onfocus="(this.type='date')" 
+                               placeholder="Salida/Check out"
+                               onfocus="(this.type='date')"
                                onblur="(this.type='text')"
                                required>
                     </div>
@@ -103,9 +109,9 @@
             <div class="col-lg-10 mb-5">
                 <div class="installations-card shadow-lg" data-bs-toggle="modal" data-bs-target="#installationsModal">
                     <div>
-                        <h3>Nuestras instalaciones <i class="bi bi-arrow-right"></i></h3>
+                        <h3>Nuestras instalaciones <span class="bi bi-arrow-right" aria-hidden="true"></span></h3>
                     </div>
-                </div>
+                </div>    
             </div>
 
             <div class="col-lg-10 mb-5">
@@ -146,8 +152,12 @@
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                        <a href="https://maps.app.goo.gl/MH1YdpNeRScxh6vj6" target="_blank" class="map-overlay"></a>
-                    </div>
+                        <a href="https://maps.app.goo.gl/MH1YdpNeRScxh6vj6" 
+                           target="_blank" 
+                           class="map-overlay" 
+                           aria-label="Ver ubicación del hotel en Google Maps">
+                        </a>
+                    </div>    
                 </div>
             </div>
 
